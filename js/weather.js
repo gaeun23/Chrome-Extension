@@ -8,7 +8,7 @@ function onGeoSuccess(position) {
         const weatherContainer = document.querySelector("#weather span:first-child");
         const cityContainer = document.querySelector("#weather span:last-child");
         cityContainer.innerText = data.list[1].name;
-        weatherContainer.innerText  = `${data.list[1].main.temp}º ${data.list[1].weather[0].main}` ;
+        weatherContainer.innerText  = `${data.list[1].main.temp}ºC , ` ;
     }));
 }
 
